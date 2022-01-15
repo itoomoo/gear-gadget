@@ -1,0 +1,286 @@
+*{
+    
+    margin: auto;
+    
+}
+
+body{
+    
+    font-family: 'Poppins', sans-serif; 
+    background-color: #ffffff;
+  }
+
+img {
+    max-width: 100%;
+}
+
+
+/* Header Styles  */
+
+
+.header{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    max-width: 1047px;
+}
+
+main {
+    max-width: 1047px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    list-style: none;
+    margin: 10px;
+    padding: 2px;
+    background-color: white;
+    font-size: 25px;
+}
+
+
+
+nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* First Section Styles */
+
+
+.first-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    transition-duration: 1s;
+}
+
+.container-elements{
+    margin-right: 30px;
+    padding: 0px;
+    max-width: 500px;
+    transition-duration: 1s;
+    
+}
+
+.first-container-img{
+    border-radius: 50%;
+    background-color: white;
+    max-width: 440px;
+    transition-duration:1.75s;
+}
+
+.first-container:hover .first-container-img {
+    transform: rotate(360deg);
+    background-color: rgba(0, 255, 255, 0.5);
+    
+}
+
+.pre-order-btn {
+    color: #fff;
+    background: #E02C6D;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600;
+    border-radius: 150px 150px;
+}
+
+.order-btn {
+    color: #fff;
+    background: #E02C6D;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.fas {
+    margin-left: 10px;
+}
+
+/* Second Container Brands Styles */
+
+.second-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.brand-images{
+    width: 1110px;
+    display: grid;
+    border-top: 1px solid rgba(128, 128, 128, 0.5);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    grid-template-columns:repeat(7, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 30px; 
+}
+
+/* Product Section Styles */
+.product-section{
+    max-width: 1047px;
+}
+
+#product-headline{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.products{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    
+}
+
+.product{
+    box-shadow: 0 30px 40px rgba(0,0,0,.1);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+
+.product-info{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.product-info h3 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+.price{
+   margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.product-rating i {
+    color: rgb(252, 174, 30);
+    margin-left: 0%;
+}
+
+.product-rating {
+    display: inline-block;
+}
+
+.rating-num {
+    display: inline;
+    margin-left: 10px;
+}
+.rating-num span{
+    display: inline;
+}
+
+.pd-btn {
+    text-align: right;
+    margin-top: 30px;
+}
+.product-section-see-more{
+    text-decoration: none;
+    color: crimson;
+    font-weight: bold;
+}
+.final-section {
+    display: flex;
+    margin: auto;
+    left: 0;
+    right: 0;
+    max-width: 1047px;
+    padding-top: 70px;
+}
+.final-section-texts {
+    max-width: 522px;
+    margin-left: 20px;
+}
+
+/* Footer Style  */
+
+footer {
+    background: #0A0826;
+    text-align: center;
+    color: #fff;
+    padding:50px 0 ;
+}
+footer a {
+    background: #151236e8;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+}
+footer .social-icon {
+    margin-top: 30px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 576px){
+   .header-h1{
+        font-size: 20px;
+        margin-left: 5px;
+   }
+   .header nav ul{
+        height: 50px;
+        display: inline-block;
+   }
+   .header nav ul li {
+       font-size: 15px;
+   }
+
+   .first-container {
+        display: inherit;
+   }
+   .container-elements {
+    margin-right: 0px;
+    }
+
+    .brand-images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .brand-images img {
+        margin-bottom: 15px;
+    }
+
+
+   /* PD  */
+   .products {
+        grid-template-columns: repeat(1, 1fr);
+   }
+
+   .final-section {
+       display: grid;
+       grid-template-columns: repeat (1,1fr);
+   }
+
+
+   footer {
+       text-align: center;
+   }
+}
+
+@media (min-width: 577px) and (max-width:992px) {
+    footer {
+        text-align: center;
+        padding-top: 30px;
+    }
+    .final-section-texts {
+        margin:0 30px
+    }
+}
